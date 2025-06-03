@@ -4,7 +4,7 @@
   "required": ["id", "title", "blocks"],
   "properties": {
     "id": {
-      "$ref": "#/definitions/cuid"
+      "type": "string"
     },
     "title": {
       "type": "string"
@@ -26,7 +26,7 @@
       "required": ["id", "type", "text"],
       "properties": {
         "id": {
-          "$ref": "#/definitions/cuid"
+          "type": "string"
         },
         "type": {
           "const": "text"
@@ -41,7 +41,7 @@
       "required": ["id", "type", "url"],
       "properties": {
         "id": {
-          "$ref": "#/definitions/cuid"
+          "type": "string"
         },
         "type": {
           "const": "video"
@@ -56,7 +56,7 @@
       "required": ["id", "type", "answerOptions"],
       "properties": {
         "id": {
-          "$ref": "#/definitions/cuid"
+          "type": "string"
         },
         "type": {
           "const": "question"
@@ -79,16 +79,12 @@
     }
   },
   "definitions": {
-    "cuid": {
-      "type": "string",
-      "title": "cuid"
-    },
     "answerOption": {
       "type": "object",
       "required": ["id", "text", "isCorrect"],
       "properties": {
         "id": {
-          "$ref": "#/definitions/cuid"
+          "type": "string"
         },
         "text": {
           "type": "string"

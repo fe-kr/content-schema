@@ -4,7 +4,7 @@
   "required": ["id", "title", "description", "sections"],
   "additionalProperties": false,
   "properties": {
-    "id": { "type": "string", "title": "Uuid" },
+    "id": { "type": "string" },
     "title": {
       "type": "string"
     },
@@ -15,7 +15,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "title": "SectionPath"
+        "title": "cuid"
       }
     }
   }

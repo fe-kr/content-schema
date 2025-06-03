@@ -15,13 +15,15 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "generate:types": "ts-node ./scripts/generate-schema-types.ts ./schemas"
+    "generate:types": "ts-node ./scripts/generate-schema-types.ts ./schemas",
+    "replace-cuid": "ts-node ./scripts/replace-cuid.ts"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
     "chokidar": "^3.5.3",
     "json-schema-to-typescript": "^15.0.4"
   }
