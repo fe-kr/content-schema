@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../../schemas/section.schema.json
+id: "cuid_001"
+title: "Sample Post Title"
+blocks:
+  - id: "cuid_text_001"
+    type: "text"
+    text: "This is an example text block where the content is explained clearly."
+
+  - id: "cuid_video_001"
+    type: "video"
+    url: "https://example.com/sample-video.mp4"
+
+  - id: "cuid_question_001"
+    type: "question"
+    answerOptions:
+      - id: "cuid_answer_001"
+        text: "Option A"
+        isCorrect: false
+      - id: "cuid_answer_002"
+        text: "Option B"
+        isCorrect: true
+      - id: "cuid_answer_003"
+        text: "Option C"
+        isCorrect: false
+    explanation: "Option B is correct because it meets all the criteria."
+    successMessage: "Excellent! You selected the right answer."
+    text: "Which option among the above is the correct answer?"

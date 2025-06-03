@@ -13,16 +13,16 @@
       "type": "array",
       "items": {
         "oneOf": [
-          { "$ref": "#/block/textBlock" },
-          { "$ref": "#/block/videoBlock" },
-          { "$ref": "#/block/questionBlock" }
+          { "$ref": "#/block/text" },
+          { "$ref": "#/block/video" },
+          { "$ref": "#/block/question" }
         ]
       }
     }
   },
   "additionalProperties": false,
   "block": {
-    "textBlock": {
+    "text": {
       "required": ["id", "type", "text"],
       "properties": {
         "id": {
@@ -37,7 +37,7 @@
       },
       "additionalProperties": false
     },
-    "videoBlock": {
+    "video": {
       "required": ["id", "type", "url"],
       "properties": {
         "id": {
@@ -52,7 +52,7 @@
       },
       "additionalProperties": false
     },
-    "questionBlock": {
+    "question": {
       "required": ["id", "type", "answerOptions"],
       "properties": {
         "id": {
@@ -85,7 +85,7 @@
     },
     "answerOption": {
       "type": "object",
-      "required": ["id", "text", "isRight"],
+      "required": ["id", "text", "isCorrect"],
       "properties": {
         "id": {
           "$ref": "#/definitions/cuid"
@@ -93,7 +93,7 @@
         "text": {
           "type": "string"
         },
-        "isRight": {
+        "isCorrect": {
           "type": "boolean"
         }
       },
